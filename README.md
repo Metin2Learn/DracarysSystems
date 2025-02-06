@@ -1,0 +1,7 @@
+- Dracarys Vote4Buff System 投票奖励
+- DracaryS Renewal_Auto_Pickup 自动拾取
+- DracaryS - back-dungeon 返回地牢
+- Dracarys Shaman System 根据物品召唤辅助角色
+- DracaryS PresentNPC 允许 NPC 穿戴装备
+- Dracarys Bravery-cape 勇敢斗篷效果
+- Dracarys Biolog Aeldra 生物学家任务管理器
