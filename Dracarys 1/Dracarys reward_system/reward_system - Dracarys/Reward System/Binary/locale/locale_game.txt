@@ -1,0 +1,21 @@
+REWARD_115	First Level 115
+REWARD_PET_115	First Pet Level 115
+REWARD_120	First Level 120
+REWARD_LEGENDARY_SKILL	First Legendary Skill
+REWARD_LEGENDARY_SKILL_SET	First Legendary Skill Set
+REWARD_THANDRUIL	First Thranduil Solo
+REWARD_HYDRA	First Hydra Solo
+REWARD_CRYSTAL_DRAGON	First Crystal Dragon Solo
+REWARD_OFFLINESHOP_SLOT	First all Offline Shop Slots unlocked
+REWARD_INVENTORY_SLOT	First all Normal/Special Inventory Slots unlocked
+REWARD_AVERAGE	First 60 AVG on Lv.75 Weapon
+REWARD_ELEMENT	First Element Talisman
+REWARD_BATTLEPASS	First Complete Battlepass
+REWARD_CUSTOM_SASH	First Custom Sash
+REWARD_AURA	First Enlightened Dream Soul
+REWARD_ENERGY	First Energy Crystal
+REWARD_112_BIO	First Completed 112 Bio Quest
+REWARD_120_BIO	First Completed 120 Bio Quest
+REWARD_LEADER_SHIP	First Leadership on Legendary
+REWARD_BUFFI_LEGENDARY_SKILL	First Buffi Legendary Skill
+REWARD_WINDOW_TITLE	Reward Window

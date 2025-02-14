@@ -1,0 +1,7 @@
+pvp_duel_setflag
+pvp_duel_getflag
+pvp_duel_register
+pvp_duel_start
+pvp_duel_close
+pvp_duel_warpbase
+pvp_duel_printblockitem

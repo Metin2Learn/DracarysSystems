@@ -1,0 +1,3 @@
+# Add
+
+#define ENABLE_REWARD_SYSTEM

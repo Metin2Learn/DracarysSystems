@@ -1,0 +1,92 @@
+--dracaryS
+
+Hey,
+
+Event System manager work with EventIndex <-
+
+	BONUS_EVENT = 1,
+	DOUBLE_BOSS_LOOT_EVENT = 2,
+	DOUBLE_METIN_LOOT_EVENT = 3,
+	DOUBLE_MISSION_BOOK_EVENT = 4,
+	DUNGEON_COOLDOWN_EVENT = 5,
+	DUNGEON_TICKET_LOOT_EVENT = 6,
+	EMPIRE_WAR_EVENT = 7,
+	MOONLIGHT_EVENT = 8,
+	TOURNAMENT_EVENT = 9,
+	WHELL_OF_FORTUNE_EVENT = 10,
+	HALLOWEEN_EVENT = 11,
+	NPC_SEARCH_EVENT = 12,
+
+Every event have special index. So have table in sql. Sql have fields example:
+
+empireFlag - This is for empire events like bonus event.
+	0 - ALL KINGDOMS
+	1 - RED KINGDOM
+	2 - YELLOW KINGDOM
+	3 - BLUE KINGDOM
+
+channelFlag - This is for events for special cores example empire war etc.
+	0 - ALL CHANNEL
+	1 - ONLY CHANNEL 1
+	2 - ONLY CHANNEL 2
+	3 - ONLY CHANNEL 3
+	4 - ONLY CHANNEL 4
+
+
+value0 & value3 - This variable for event data.
+
+	DOUBLE_BOSS_LOOT_EVENT:
+	DOUBLE_METIN_LOOT_EVENT:
+	DOUBLE_MISSION_BOOK_EVENT:
+	DUNGEON_TICKET_LOOT_EVENT:
+	MOONLIGHT_EVENT:
+		value3 - drop lucky
+
+	BONUS_EVENT:
+		value0 - applytype
+		value1 - applyvalue
+
+	EMPIRE_WAR_EVENT:
+		value0 - min lvl
+		value1 - max lvl
+
+	TOURNAMENT_EVENT:
+		value0 - pvp type:
+			0 - ALL CHARACTER
+			1 - WARRIOR
+			2 - ASSASSIN
+			3 - SURA
+			4 - SHAMAN
+
+		value1 - min lvl
+		value2 - max lvl
+
+	NPC_SEARCH_EVENT:
+		value0 - Event mapIndex
+		value1 - Event mapIndex
+		value2 - Event mapIndex
+		value3 - Event mapIndex
+
+You can control events start and end 
+
+	void CHARACTER_MANAGER::SetEventStatus(const TEventManagerData& m_data, bool eventStatus)
+
+	eventStatus == true - ACTIVE
+	eventStatus == false - DEACTIVE
+
+
+You can check event is active or deactive in C++
+
+	if(CHARACTER_MANAGER::Instance().CheckEventIsActive(DUNGEON_TICKET_LOOT_EVENT))
+		print "EVENT IS ON";
+	else
+		print "EVENT IS OFF";
+
+You can check event is active or deactive in LUA
+
+	--DUNGEON_COOLDOWN_EVENT=5
+	if(game.check_event(5))
+		print "EVENT IS ON"
+	else
+		print "EVENT IS OFF"
+	end

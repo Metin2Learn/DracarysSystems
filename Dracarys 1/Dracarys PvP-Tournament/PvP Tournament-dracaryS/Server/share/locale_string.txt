@@ -1,0 +1,92 @@
+"1001";
+"[PvP Duel] You cant use this in this map!";
+
+"1002";
+"[PvP Duel] You can't start with this core!";
+
+"1003";
+"[PvP Duel] All player send out in %d second.";
+
+"1004";
+"[PvP-Duel] Register is start. Register Time: %d minute. Max Register: %d";
+
+"1005";
+"[PvP-Duel] Duel can register only: %s";
+
+"1006";
+"[PvP-Duel] Duel can register all character.";
+
+"1007";
+"[PvP-Duel] Duel bet price is %d yang";
+
+"1008";
+"[PvP-Duel] Duel don't has bet.";
+
+"1009";
+"[PvP-Duel] You can enter from Batlle Bailiff npc from city!";
+
+"1010";
+"[PvP-Duel] Register process is done! Total Register: %d / %d";
+
+"1011";
+"[PvP-Duel] Total bet money is %lld yang";
+
+"1012";
+"[PvP-Duel] Tournament will be start in few seconds, Good Luck!";
+
+"1013";
+"[PvP Duel] Event already running!";
+
+"1014";
+"[PvP Duel] You need set register max time!";
+
+"1015";
+"[PvP Duel] You need set register count!";
+
+"1016";
+"[PvP Duel] You need set min level!";
+
+"1017";
+"[PvP Duel] You need set max level!";
+
+"1018";
+"[PvP Duel] Final PvP will start in %d sec.";
+
+"1019";
+"[PvP Duel] Semi-Final PvP will start in %d sec.";
+
+"1020";
+"[PvP Duel] Quarter-Final PvP will start in %d sec.";
+
+"1021";
+"[PvP Duel] PvP will start in %d sec.";
+
+"1022";
+"[PvP Duel] %s %d - %d %s - Congrats %s";
+
+"1023";
+"[PvP Duel] %s %d - %d %s. Next rount will start in %d second.";
+
+"1024";
+"[PvP Duel] PvP Duel Done! Winner is %s. Earn %lld gold";
+
+"1025";
+"[PvP Duel] PvP Duel Done! Winner is %s";
+
+"1026";
+"[PvP Duel] Event will close from game master!";
+
+"1027";
+"[PvP Duel] Not have enought register for pvp.";
+
+"1028";
+"[PvP Duel] %s expelled from duel from game master.";
+
+"1029";
+"[PvP Duel] %s left the PvP Duel. Congrats %s";
+
+"1030";
+"[PvP Duel] PvP Tournament register count is done!";
+
+"1031";
+"[PvP Duel] You can't send party request in this map!";

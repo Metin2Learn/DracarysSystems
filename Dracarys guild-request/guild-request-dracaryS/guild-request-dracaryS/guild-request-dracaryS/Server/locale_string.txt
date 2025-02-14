@@ -1,0 +1,35 @@
+"749";
+"%s enviar solicitação para entrar na guilda.";
+
+"750";
+"Alguém manda um pedido para entrar na guilda.";
+
+"751";
+"Sua solicitação foi enviada com sucesso para a guilda %s.";
+
+"752";
+"Sua solicitação de envio para entrar na guilda.";
+
+"753";
+"%s já tem uma guilda!";
+
+"754";
+"Você precisa estar no mesmo canal do jogador %d";
+
+"755";
+"Jogador offline, espere ele ficar online.";
+
+"756";
+"Seu reino não é o mesmo %s.";
+
+"757";
+"Você já tem guilda!";
+
+"758";
+"Solicitação de remoção com sucesso.";
+
+"759";
+"Sua solicitação %s foi removida com sucesso.";
+
+"760";
+"Sua solicitação de remoção da Guilda %s foi enviada!";

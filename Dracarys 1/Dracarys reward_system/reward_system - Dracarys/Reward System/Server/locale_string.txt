@@ -1,0 +1,59 @@
+"775";
+"First Level 115 is %s";
+
+"776";
+"First Pet Level 115 is %s";
+
+"777";
+"First Level 120 is %s";
+
+"778";
+"First Legendary Skill is %s";
+
+"779";
+"First Legendary Skill Set is %s";
+
+"780";
+"First Thranduil Solo is %s";
+
+"781";
+"First Hydra Solo is %s";
+
+"782";
+"First Crystal Dragon Solo is %s";
+
+"783";
+"First all Offline Shop Slots unlocked is %s";
+
+"784";
+"First all Normal/Special Inventory Slots unlocked is %s";
+
+"785";
+"First 60 AVG on Lv.75 Weapon is %s";
+
+"786";
+"First Element Talisman is %s";
+
+"787";
+"First Complete Battlepass";
+
+"788";
+"First Custom Sash is %s";
+
+"789";
+"First Enlightened Dream Soul is %s";
+
+"790";
+"First Energy Crystal is %s";
+
+"791";
+"First Completed 112 Bio Quest is %s";
+
+"792";
+"First Completed 120 Bio Quest is %s";
+
+"793";
+"First Leadership on Legendary is %s";
+
+"794";
+"First Buffi Legendary Skill is %s";

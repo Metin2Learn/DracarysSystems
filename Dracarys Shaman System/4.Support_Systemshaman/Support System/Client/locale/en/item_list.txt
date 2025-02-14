@@ -1,0 +1,4 @@
+61020	ETC	icon/item/shaman.tga
+61021	ETC	icon/item/shaman.tga
+61022	ETC	icon/item/shaman.tga
+61023	ETC	icon/item/shaman.tga

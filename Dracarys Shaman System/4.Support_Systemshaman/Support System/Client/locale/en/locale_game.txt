@@ -1,0 +1,4 @@
+IYILESTIRME	health
+EJDERHA	dragon
+PET_KALAN_TECRUBE	Remaining Experience: 
+PET_GUNCEL_TECRUBE	Real Experience: 

@@ -1,0 +1,41 @@
+"761";
+"Bonus event is active!";
+
+"762";
+"Bonus event is done!";
+
+"763";
+"Double Boss Loot event is active!";
+
+"764";
+"Double Boss Loot event is done!";
+
+"765";
+"Double Metin Loot event is active!";
+
+"766";
+"Double Metin Loot event is done!";
+
+"767";
+"Double Mission Book event is active!";
+
+"768";
+"Double Mission Book event is done!";
+
+"769";
+"Dungeon Cooldown event is active!";
+
+"770";
+"Dungeon Cooldown event is done!";
+
+"771";
+"Dungeon Ticket event is active!";
+
+"772";
+"Dungeon Ticket event is done!";
+
+"773";
+"MoonLight event is active!";
+
+"774";
+"MoonLight event is done!";

@@ -1,0 +1,7 @@
+20570	Brave Cape(1-Day)
+20571	Brave Cape(3-Day)
+20572	Brave Cape(7-Day)
+20573	Brave Cape(14-Day)
+20574	Brave Cape(30-Day)
+20575	Brave Cape(Infinite)
+

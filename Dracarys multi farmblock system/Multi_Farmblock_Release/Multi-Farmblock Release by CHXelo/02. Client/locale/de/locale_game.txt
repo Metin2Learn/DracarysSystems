@@ -1,0 +1,7 @@
+ANTI_MULTIPLE_FARM_TOOLTIP	Farmblock-Panel
+ANTI_MULTIPLE_FARM_ADVISE_1	Sie können nur maximal {} Charaktere auswählen!
+ANTI_MULTIPLE_FARM_ADVISE_2	Die von Ihnen ausgewählten Charaktere sind bereits freigeschaltet.
+ANTI_MULTIPLE_FARM_ADVISE_3	Sie müssen obligatorisch {} Charaktere auswählen.
+ANTI_MULTIPLE_FARM_REFRESHED	Das Farm Block System hat eine Änderung festgestellt, es wurde aktualisiert.
+ANTI_MULTIPLE_FARM_ATTEND_CHANGE_STATUS	Die Anfrage zur Statusänderung wurde gesendet, bitte warten Sie.
+ANTI_MULTIPLE_FARM_MESSAGE	Du musst mindestens {} Charaktere eingeloggt haben.

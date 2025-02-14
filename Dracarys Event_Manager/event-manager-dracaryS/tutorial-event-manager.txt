@@ -1,0 +1,139 @@
+--event-managerv2#dracaryS#date:1.4.22
+
+* Event Manager SQL Fields:
+
+	-> id - Every event id need be different!
+	-> eventIndex - Select your want event index in enum.
+	-> startTime - Select your want start time for event.
+	-> endTime - Select your want end time for event (but if you have pvp tournament or special event like ox don't have end time change this field -> 0000-00-00 00:00:00 like that!) <- IMPORTANT
+	-> empireFlag - Select your want open event special for empire (0-All,1-Shinsoo,2-Chunjo,3-Jinno)
+	-> channelFlag - Select your want open event special for channel index (0-All Channel,1-2-3-4...)
+	-> value0 - Saving value for event settings!
+	-> value1 - Saving value for event settings!
+	-> value2 - Saving value for event settings!
+	-> value3 - Saving value for event settings!
+
+* Value Setting for events:
+
+	EXP_EVENT:
+	ITEM_DROP_EVENT:
+	YANG_DROP_EVENT:
+		value0 - drop date
+
+	BONUS_EVENT:
+		value0 - applytype
+		value1 - applyvalue
+
+	DOUBLE_BOSS_LOOT_EVENT:
+	DOUBLE_METIN_LOOT_EVENT:
+	DOUBLE_MISSION_BOOK_EVENT:
+	DUNGEON_TICKET_LOOT_EVENT:
+	MOONLIGHT_EVENT:
+		value3 - drop lucky
+
+	EMPIRE_WAR_EVENT:
+		value0 - min lvl
+		value1 - max lvl
+
+	TOURNAMENT_EVENT:
+		value0 - pvp type(0-all,1-warrior,2-assassin,3-sura,4-shaman)
+		value1 - min lvl
+		value2 - max lvl
+
+	NPC_SEARCH_EVENT:
+		value0 - Event mapIndex
+		value1 - Event mapIndex
+		value2 - Event mapIndex
+		value3 - Event mapIndex
+
+* Some example in game source:
+
+	* In char_manager.cpp -> void CHARACTER_MANAGER::SetEventStatus(const WORD eventID, const bool eventStatus, const int endTime)
+		* When event active or deactive this functin will run. eventStatus(false-deactive,true-active) (has example)
+		* You can control or start event from this function with checking eventData->eventIndex in function already have many examples. (has example)
+		* You can send notice in this function for player.(has example)
+
+	* In char_manager.cpp -> void CHARACTER_MANAGER::CheckEventForDrop(LPCHARACTER pkChr, LPCHARACTER pkKiller, std::vector<LPITEM>& vec_item)
+		* You can set item event from this function so easy to set.(has example)
+
+	* In char_manager.cpp -> const TEventManagerData* CHARACTER_MANAGER::CheckEventIsActive(BYTE eventIndex, BYTE empireIndex)
+		* You can check event active with this function.(has example)
+		* CHARACTER_MANAGER::Instance().CheckEventIsActive(EVENT_BLABLA, 0) <-- If u put 0 function don't check empire.
+
+	* In char_manager.cpp -> bool CHARACTER_MANAGER::CloseEventManuel(BYTE eventIndex)
+		* You can close event manuel with this function.(has example-command)
+		* Example you have ox event only have startTime but you want when ox event done close event so you need use like CHARACTER_MANAGER::Instance().CloseEventManuel(EVENT_BLABLA);
+
+* Some command for control event manager from game master:
+
+	* Update event manager command when u write initialize event manager and update all player data! -> /event_manager update
+	* You can stop event with eventindex -> /event_manager remove 1-(BONUS_EVENT)
+
+
+* Some example in quest:
+
+	* You can check event active with game.check_event(EVENT_INDEX, 0) -- (if you put 0 don't check empire flag)
+	* Example for cooldown event:
+		* You giving cooldown like -> pc.setqf("deviltower","cooldown",get_time()+3600)
+			* You need set like this!
+				if game.check_event(5, pc.get_empire()) == true then --DUNGEON_COOLDOWN_EVENT=5
+					pc.setqf("deviltower","cooldown",get_time()+1800)
+				else
+					pc.setqf("deviltower","cooldown",get_time()+3600)
+				end
+
+* How can adapt my gui open from event icon or mini icon?
+
+	* Open root/uieventcalendar.py
+		* Search def OnClick(self, eventIndex):
+		* Example like this.
+			def OnClick(self, eventIndex):
+				if player.WHELL_OF_FORTUNE_EVENT == eventIndex:
+					#interface = constInfo.GetInterfaceInstance()
+					#if interface != None:
+					#	interface.OpenWheelWindow()
+
+* How can i add new event?
+
+	* game-source part:
+
+		* Open common/tables.h
+			*Search
+				YANG_DROP_EVENT = 15,
+			*Add after
+				EVENT_TEST = 16,
+
+		* Open db/ClientManager.cpp (If your event only startTime like pvp tournament-empire war- ox event etc.) <- IMPORTANT
+			*Search
+				case TOURNAMENT_EVENT:
+			*Add after
+				case EVENT_TEST:
+		
+		* Add your event doing things in game source get example from events.
+
+	* client-source part:
+
+		* Open UserInterface/packet.h
+			*Search
+				YANG_DROP_EVENT = 15,
+			*Add after
+				EVENT_TEST = 16,
+
+		* Open UserInterface/PythonPlayerModule.cpp
+			*Search
+				PyModule_AddIntConstant(poModule, "YANG_DROP_EVENT", YANG_DROP_EVENT);
+			*Add after
+				PyModule_AddIntConstant(poModule, "EVENT_TEST", EVENT_TEST);
+
+	* binary part:
+
+		* Open root/uieventcalendar.py
+			*Search
+				player.EXP_EVENT:["exp_event",localeInfo.EXP_EVENT],
+			*Add after
+				player.EVENT_TEST:["test_event",localeInfo.EVENT_TEST],
+
+		* Add some settings get example from events.
+		* Add locale text in locale_game.txt -> EVENT_TEST
+		* Add image in d:/ymir work/ui/game/event_calendar -> event_test
+

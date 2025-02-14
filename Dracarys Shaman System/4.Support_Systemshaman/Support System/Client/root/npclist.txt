@@ -1,0 +1,4 @@
+0	shaman_1	support
+0	shaman_2	support
+34998	shaman_2
+34999	shaman_1

@@ -1,0 +1,7 @@
+20570	ETC	icon/item/20570.tga
+20571	ETC	icon/item/20570.tga
+20572	ETC	icon/item/20570.tga
+20573	ETC	icon/item/20570.tga
+20574	ETC	icon/item/20570.tga
+20575	ETC	icon/item/20570.tga
+

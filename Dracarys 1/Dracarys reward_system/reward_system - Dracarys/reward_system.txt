@@ -1,0 +1,61 @@
+You need put like your serverfiles lines:
+Already u know every server files have different system for these.
+So i write 2 function for both side. If u write same line like this work %100.
+
+understand?yes 
+
+you need put your server files i already give example like levelup bro.
+
+look here. understand? yes is about the code! yes yes i will try this one with level 75 and 90 yes
+
+when u change or add new mission first look tutorial and look add like i am doing ok?ok if i have any question i call you :D ok bro.thank you
+
+np i need go sleep right now everything ok. see u brother. see you good nitght <3
+
+Lua:
+
+		game.set_reward(REWARD_INDEX)
+
+
+
+		when levelup with pc.get_level() == 115 begin
+			--REWARD_115=1
+			game.set_reward(1)
+		end
+		when levelup with pc.get_level() == 120 begin
+			--REWARD_120=3
+			game.set_reward(3)
+		end
+
+C++:
+
+	CHARACTER_MANAGER::Instance().SetRewardData(REWARD_INDEX, PLAYERNAME, ALWAYS HERE TRUE);
+
+	//REWARD_THANDRUIL=6,
+	CHARACTER_MANAGER::Instance().SetRewardData(REWARD_THANDRUIL, ch->GetPlayerName(), true);
+
+
+Rewards:
+
+	REWARD_NONE = 0,
+	REWARD_115 = 1,
+	REWARD_PET_115=2,
+	REWARD_120=3,
+	REWARD_LEGENDARY_SKILL=4,
+	REWARD_LEGENDARY_SKILL_SET=5,
+	REWARD_THANDRUIL=6,
+	REWARD_HYDRA=7,
+	REWARD_CRYSTAL_DRAGON=8,
+	REWARD_OFFLINESHOP_SLOT=9,
+	REWARD_INVENTORY_SLOT=10,
+	REWARD_AVERAGE=11,
+	REWARD_ELEMENT=12,
+	REWARD_BATTLEPASS=13,
+	REWARD_CUSTOM_SASH=14,
+	REWARD_AURA=15,
+	REWARD_ENERGY=16,
+	REWARD_112_BIO=17,
+	REWARD_120_BIO=18,
+	REWARD_LEADER_SHIP=19,
+	REWARD_BUFFI_LEGENDARY_SKILL=20,
+	REWARD_MAX,

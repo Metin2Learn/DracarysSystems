@@ -1,0 +1,9 @@
+# Search
+
+	AFFECT_QUEST_START_IDX = 1000,
+
+# Add before
+
+#ifdef ENABLE_PVP_TOURNAMENT
+	AFFECT_PVP_DUEL = 704,
+#endif

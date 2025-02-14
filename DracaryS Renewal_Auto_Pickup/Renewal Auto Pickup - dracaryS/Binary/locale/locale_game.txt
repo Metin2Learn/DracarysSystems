@@ -1,0 +1,5 @@
+NEW_AFFECT_PICKUP_ENABLE	Pickup Enable	SNA
+NEW_AFFECT_PICKUP_DEACTIVE	Pickup Deactive	SNA
+PICKUP_ACTIVE_DIALOG	Do you active auto pickup?
+PICKUP_DEACTIVE_DIALOG	Do you deactive auto pickup?
+

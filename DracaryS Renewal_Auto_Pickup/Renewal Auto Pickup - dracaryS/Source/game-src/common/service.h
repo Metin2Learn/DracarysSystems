@@ -1,0 +1,4 @@
+# Add
+
+#define RENEWAL_PICKUP_AFFECT
+
