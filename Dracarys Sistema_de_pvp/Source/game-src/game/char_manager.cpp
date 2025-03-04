@@ -10,7 +10,7 @@
 		}
 
 # add before
-
+# to do find where
 #ifdef ENABLE_PVP_CAMERA_MODE
 		RemoveCamera(ch);
 #endif
