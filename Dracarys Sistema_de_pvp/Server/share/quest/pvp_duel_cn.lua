@@ -1,126 +1,128 @@
 quest pvp_duel_manager begin
-    state start begin
-        when login with pc.is_gm() begin
-            send_letter("ä¼ é€åˆ° PvP ç«æŠ€åœº")
-        end
-        when button or info begin
-            if pc.is_gm() then
-                say_title("ç½—çº³å…‹é¢æ¿")
-                say("")
-                say("æ‚¨æƒ³è¦ä¼ é€å—ï¼Ÿ")
-                local x = select("æ˜¯", "å–æ¶ˆ")
-                if x == 1 then
-                    pvp_duel_warpbase()
-                else
-                    return
-                end
-            end
-        end
+	state start begin
+		when login with pc.is_gm() begin
+			send_letter("´«ËÍµ½ PvP ÈüÊÂ")
+		end
+		when button or info begin
+			if pc.is_gm() then
+				say_title("Ronark Ãæ°å")
+				say("")
+				say("ÄãÏëÒª´«ËÍÂğ£¿")
+				local x = select("ÊÇµÄ","È¡Ïû")
+				if x == 1 then
+					pvp_duel_warpbase()
+				else
+					return
+				end
+			end
+		end
 
-        when guild_war_observer1.chat."PvP Duel" or guild_war_observer2.chat."PvP Duel" or guild_war_observer3.chat."PvP Duel" with game.get_event_flag("pvp_duel_active") == 1 begin
-            say_title(mob_name(11001))
-            say("")
-            say("æ‚¨æƒ³åŠ å…¥ PvP ç«æŠ€å—ï¼Ÿ")
-            local x = select("æ˜¯ï¼Œæˆ‘æƒ³åŠ å…¥..", "ä¸ï¼Œè°¢è°¢..")
-            if x == 1 then
-                pvp_duel_warpbase()
-            else
-                return
-            end
-        end
+		when 11001.chat."PvP Duel" or 11002.chat."PvP Duel" or 11003.chat."PvP Duel" with game.get_event_flag("pvp_duel_active") == 1 begin
+			say_title(mob_name(11001))
+			say("")
+			say("ÄãÏëÒª²Î¼Ó PvP ÈüÊÂÂğ£¿")
+			local x = select("ÊÇµÄ£¬ÎÒÏë²Î¼Ó..", "²»£¬Ğ»Ğ»..")
+			if x == 1 then
+				pvp_duel_warpbase()
+			else
+				return
+			end
+		end
 
-        when 60001.chat."æ³¨å†Œ PvP ç«æŠ€" begin
-            say_title(mob_name(60001))
-            say("")
-            say("æ‚¨æƒ³æ³¨å†Œ PvP ç«æŠ€å—ï¼Ÿ")
-            local x = select("æ˜¯", "å–æ¶ˆ")
-            if x == 1 then
-                local betMoney = pvp_duel_getflag("pvp_bet")
-                if betMoney > 0 then
-                    say_title(mob_name(60001))
-                    say("")
-                    say("è¯¥ç«æŠ€æœ‰ "..betMoney.." é‡‘å¸ä½œä¸ºèµŒæ³¨")
-                    say("æ‚¨ä»ç„¶æƒ³æ³¨å†Œå—ï¼Ÿ")
-                    local z = select("æ˜¯ï¼Œæˆ‘æƒ³æ³¨å†Œ..", "ä¸ï¼Œè°¢è°¢..")
-                    if z != 1 then
-                        return
-                    end
-                end
-                say_title(mob_name(60001))
-                say("")
-                local returnValue = pvp_duel_register()
-                if returnValue == 99 then -- æˆåŠŸæ³¨å†Œï¼
-                    say("æ‚¨å·²æˆåŠŸæ³¨å†Œï¼")
-                elseif returnValue == 0 then -- ç®—æ³•å‡ºé”™ï¼
-                    say("ç®—æ³•å‡ºé”™ï¼")
-                elseif returnValue == 1 then -- äº‹ä»¶æœªæ¿€æ´»
-                    say("äº‹ä»¶æœªæ¿€æ´»ï¼")
-                elseif returnValue == 2 then -- æ³¨å†Œæ—¶é—´å·²è¿‡
-                    say("æ³¨å†Œæ—¶é—´å·²ç»“æŸï¼")
-                elseif returnValue == 3 then -- æ³¨å†Œäººæ•°å·²æ»¡
-                    say("æ³¨å†Œäººæ•°å·²æ»¡ï¼")
-                elseif returnValue == 4 then -- èŒä¸šä¸åŒ¹é…
-                    say("æ‚¨çš„èŒä¸šæ— æ³•å‚åŠ  PvP ç«æŠ€ï¼")
-                elseif returnValue == 5 then -- ç­‰çº§ä½äºæœ€ä½è¦æ±‚
-                    say("æ‚¨çš„ç­‰çº§ä½äºæœ€ä½è¦æ±‚ï¼")
-                elseif returnValue == 6 then -- ç­‰çº§è¶…è¿‡æœ€é«˜è¦æ±‚
-                    say("æ‚¨çš„ç­‰çº§é«˜äºæœ€é«˜è¦æ±‚ï¼")
-                elseif returnValue == 7 then -- ä¸åŒçš„åœ°å›¾ç´¢å¼•
-                    say("æ‚¨ä¸èƒ½åœ¨ä¸åŒçš„åœ°å›¾ä¸Šæ³¨å†Œï¼")
-                elseif returnValue == 8 then -- èµŒæ³¨ä¸è¶³
-                    say("æ‚¨çš„èµŒæ³¨ä¸è¶³ï¼")
-                elseif returnValue == 9 then -- å·²ç»æ³¨å†Œè¿‡
-                    say("æ‚¨å·²ç»ä¸ºæ­¤è§’è‰²æ³¨å†Œè¿‡äº†ï¼")
-                elseif returnValue == 10 then -- ç›¸åŒ IP æ³¨å†Œ
-                    say("åŒä¸€å°ç”µè„‘åªèƒ½æ³¨å†Œä¸€æ¬¡ï¼")
-                end
-            else
-                return
-            end
-        end
+		when 11001.chat."×¢²á PvP ÈüÊÂ" begin
+			say_title(mob_name(11001))
+			say("")
+			say("ÄãÏëÒª×¢²á PvP ÈüÊÂÂğ£¿")
+			local x = select("ÊÇµÄ","È¡Ïû")
+			if x == 1 then
+				
+				local betMoney = pvp_duel_getflag("pvp_bet")
+				if betMoney > 0 then
+					say_title(mob_name(11001))
+					say("")
+					say("ÈüÊÂÓĞ "..betMoney.." ½ğ±Ò×÷Îª¶Ä×¢")
+					say("ÄãÈÔÈ»ÏëÒª×¢²áÂğ£¿")
+					local z = select("ÊÇµÄ£¬ÎÒÏë²Î¼Ó..", "²»£¬Ğ»Ğ»..")
+					if z != 1 then
+						return
+					end
+				end
+				say_title(mob_name(11001))
+				say("")
+				local returnValue = pvp_duel_register()
+				if returnValue == 99 then--³É¹¦£¡
+					say("ÄãÒÑ³É¹¦×¢²á£¡")
+				elseif returnValue == 0 then--ÎŞÃèÊö£¡
+					say("Ëã·¨³öÏÖÎÊÌâ£¡")
+				elseif returnValue == 1 then--ÊÂ¼şÎ´¼¤»î
+					say("ÊÂ¼şÎ´¼¤»î£¡")
+				elseif returnValue == 2 then--Ã»ÓĞÊ£Óà×¢²áÊ±¼ä
+					say("×¢²áÊ±¼äÒÑ½áÊø£¡")
+				elseif returnValue == 3 then--´ïµ½×î´ó×¢²áÈËÊı
+					say("×¢²áÈËÊıÒÑÂú£¡")
+				elseif returnValue == 4 then--Ö°Òµ²»Í¬
+					say("ÄãµÄ½ÇÉ«Ö°ÒµÎŞ·¨²Î¼Ó PvP£¡")
+				elseif returnValue == 5 then--µÈ¼¶Ğ¡ÓÚ×îµÍÒªÇó
+					say("ÄãµÄµÈ¼¶µÍÓÚ×îµÍÒªÇó£¡")
+				elseif returnValue == 6 then--µÈ¼¶¸ßÓÚ×î¸ßÒªÇó
+					say("ÄãµÄµÈ¼¶¸ßÓÚ×î¸ßÒªÇó£¡")
+				elseif returnValue == 7 then--µØÍ¼Ë÷Òı²»Í¬
+					say("Äã²»ÄÜÔÚÆäËûµØÍ¼×¢²á£¡")
+				elseif returnValue == 8 then--¶Ä×¢²»×ã
+					say("ÄãµÄ¶Ä×¢²»×ã£¡")
+				elseif returnValue == 9 then--ÒÑ×¢²á
+					say("ÄãÒÑ¾­ÓÃÕâ¸ö½ÇÉ«×¢²á¹ıÁË£¡")
+				elseif returnValue == 10 then--Í¬Ò»IPÒÑ×¢²á
+					say("Ã¿Ì¨µçÄÔÖ»ÄÜ×¢²áÒ»´Î£¡")
+				end
+			else
+				return
+			end
+		end
 
-        when 60001.chat."<GM> PvP ç«æŠ€çŠ¶æ€è®¾ç½®" with pc.is_gm() begin
-            say_title(mob_name(60001))
-            say("")
-            say("è¯·é€‰æ‹©æ‚¨æƒ³è¦çš„æ“ä½œ")
-            local x = select("å¼€å¯äº‹ä»¶", "å…³é—­äº‹ä»¶", "å–æ¶ˆ")
-            if x == 1 then
-                cmdchat("OpenPvPDuelPanel")
-            elseif x == 2 then
-                pvp_duel_close()
-                say("æˆåŠŸå…³é—­ï¼")
-            else
-                return
-            end
-        end
+		when 11001.chat."<GM> PvP ÈüÊÂ×´Ì¬ÉèÖÃ" with pc.is_gm() begin
+			say_title(mob_name(11001))
+			say("")
+			say("ÇëÑ¡ÔñÄãÏëÒªµÄ²Ù×÷")
+			local x = select("¿ªÆôÊÂ¼ş","¹Ø±ÕÊÂ¼ş", "È¡Ïû")
+			if x == 1 then
+				cmdchat("OpenPvPDuelPanel")
+			elseif x == 2 then
+				pvp_duel_close()
+				say("³É¹¦¹Ø±Õ£¡")
+			else
+				return
+			end
+		end
 
-        when 60001.chat."<GM> PvP ç«æŠ€ç‰©å“å°é”" with pc.is_gm() begin
-            say_title(mob_name(60001))
-            say("")
-            say("è¯·é€‰æ‹©æ‚¨æƒ³è¦çš„æ“ä½œ")
-            local x = select("æ·»åŠ å°é”ç‰©å“", "ç§»é™¤å°é”ç‰©å“", "æŸ¥çœ‹å°é”ç‰©å“", "å–æ¶ˆ")
-            if x >= 1 and x <= 2 then
-                say("è¯·è¾“å…¥æ‚¨æƒ³è¦å°é”çš„ç‰©å“ VNUMï¼")
-                local itemVnum = tostring(input(''))
-                say("æ‚¨ç¡®è®¤è¦å°é”è¿™ä¸ªç‰©å“å—ï¼Ÿ")
-                local z = select("æ˜¯", "å–æ¶ˆ")
-                if z == 1 then
-                    if x == 1 then
-                        pvp_duel_setflag(string.format("block_%s", itemVnum), 1)
-                    elseif x == 2 then
-                        pvp_duel_setflag(string.format("block_%s", itemVnum), 0)
-                    else
-                        return
-                    end
-                else
-                    return
-                end
-            elseif x == 3 then
-                pvp_duel_printblockitem()
-            else
-                return
-            end
-        end
+		when 11001.chat."<GM> PvP ÈüÊÂÎïÆ··âËø" with pc.is_gm() begin
+			say_title(mob_name(11001))
+			say("")
+			say("ÇëÑ¡ÔñÄãÏëÒªµÄ²Ù×÷¡£")
+			local x = select("Ìí¼Ó·âËøÎïÆ·","ÒÆ³ı·âËøÎïÆ·","²é¿´·âËøÎïÆ·", "È¡Ïû")
+			if x >= 1 and x <= 2 then
+				say("ÇëÊäÈëÄãÏëÒªµÄÎïÆ· VNUM£¡")
+				local itemVnum = tostring(input(''))
+				say("ÄãÈ·¶¨ÒªÌí¼ÓÂğ£¿")
+				local z = select("ÊÇµÄ","È¡Ïû")
+				if z == 1 then
+					if x == 1 then
+						pvp_duel_setflag(string.format("block_%s",itemVnum),1)
+					elseif x == 2 then
+						pvp_duel_setflag(string.format("block_%s",itemVnum),0)
+					else
+						return
+					end
+				else
+					return
+				end
 
-    end
+			elseif x == 3 then
+				pvp_duel_printblockitem()
+			else
+				return
+			end
+		end
+
+	end
 end
