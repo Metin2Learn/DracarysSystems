@@ -1,0 +1,4 @@
+# Add
+
+#define ENABLE_NEW_NAME_ITEM
+#define ENABLE_NEW_PET_SYSTEM

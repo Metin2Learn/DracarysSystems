@@ -1,0 +1,38 @@
+#Search
+
+		ITEM_TYPE_BELT,
+
+# Add after
+
+#ifdef ENABLE_NEW_PET_SYSTEM
+		ITEM_TYPE_PET,
+#endif
+
+# Search
+
+	enum EMaterialSubTypes
+
+# Add before
+
+#ifdef ENABLE_NEW_PET_SYSTEM
+	enum EPetSubTypes
+	{
+		PET_LEVELABLE,
+		PET_EGG,
+		PET_TRANSPORTBOX,
+		PET_PROTEIN,
+		PET_CHANGE_NAME_ITEM,
+		PET_DEW,
+		PET_SKILL,
+		PET_PRIMIUM_FEEDSTUFF,
+		PET_ATTR_CHANGE,
+		PET_ATTR_DETERMINE,
+		PET_EXPFOOD_PER,
+		PET_SKILL_DEL_BOOK,
+		PET_SKILL_ALL_DEL_BOOK,
+		PET_EXPFOOD,
+		PET_FEEDSTUFF,
+
+	};
+#endif
+

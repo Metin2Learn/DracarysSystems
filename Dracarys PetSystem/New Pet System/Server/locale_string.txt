@@ -1,0 +1,54 @@
+"718";
+"[Pet] Evcil hayvanınızın seviyesi bunu yapmak için yetersiz. Need Level: %d.";
+
+"719";
+"[Pet] Your pet has run out of life energy, feed it with %s to summon it again.";
+
+"720";
+"[Pet] Your pet has gained %d daily life energy.";
+
+"721";
+"[Pet] You can't do this without your pet!";
+
+"722";
+"[Pet] You cannot improve your bonuses with this potion!";
+
+"723";
+"[Pet] There are no empty slots!";
+
+"724";
+"[Pet] You learned the %s skill!";
+
+"725";
+"[Pet] Your %s skill is at maximum level.";
+
+"726";
+"[Pet] Your %s skill increase succesfully.";
+
+"727";
+"[Pet] Your %s skill remove succesfully.";
+
+"728";
+"[Pet] Your pet does not have any skills.";
+
+"729";
+"[Pet] All of your pet's skills have been reset.";
+
+"730";
+"[Pet] Need Item: %s (%dx)";
+
+"731";
+"[Pet] Your pet's evolution is maximum.";
+
+"732";
+"[Pet] Your pet's life energy is at maximum level.";
+
+"733";
+"[Pet] A slot has been successfully unlocked for your pet.";
+
+"684";
+"You have to slow down a little. Try this process again in %d seconds.";
+
+"688";
+"Pet succesfully name change.";
+

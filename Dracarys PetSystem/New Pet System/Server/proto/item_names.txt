@@ -1,0 +1,40 @@
+55010	Art of Metin Hunter
+55011	Art of Boss Hunter
+55012	Art of Undead Hunter
+55013	Art of God Slaying
+55014	Art of Supreme Sage
+55015	Art of Monster Hunter
+55016	Art of Might
+55017	Art of Knowledge
+55018	Art of Shadow
+55019	Art of Magic Hunter
+55020	Art of Weapon Hunter
+55021	Art of Sacred Protection
+55022	Art of Sacred Armor
+55023	Art of God Blessing
+55024	Art of Supreme Warrior
+55025	Art of Boss Master
+55026	Art of Sacred Element
+55027	Art of Weapon Master
+55028	Art of Magic Master
+55029	Art of Master Hunter
+55030	Art of Holy Water
+55031	Art of Life
+55032	Tasty Treat
+55033	Pet Reverti
+55034	Pet Revertus
+55035	Tasty Treat+
+55036	Pet Open Slot
+55037	Enchant Pet
+55101	Elixir of Vitality(S)
+55102	Elixir of Vitality(M)
+55103	Elixir of Vitality(L)
+55104	Elixir of Vitality(XL)
+55108	Elixir of Fight(S)
+55109	Elixir of Fight(M)
+55110	Elixir of Fight(L)
+55111	Elixir of Fight(XL)
+55115	Elixir of Power(S)
+55116	Elixir of Power(M)
+55117	Elixir of Power(L)
+55118	Elixir of Power(XL)
