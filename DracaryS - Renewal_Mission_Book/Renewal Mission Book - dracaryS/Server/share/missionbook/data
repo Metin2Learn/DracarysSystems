@@ -1,0 +1,102 @@
+start
+id 1
+book 50307
+type monster
+subtype all
+levelrange 10
+max 10
+timer 3600
+gold 100 200
+exp 100 200
+reward 51501 10
+reward 51501 10
+reward 51501 10
+reward 51501 10
+reward 51501 10
+end
+
+start
+id 2
+book 50308
+type metin
+subtype all
+levelrange 30
+max 15
+timer 600
+gold 1000 5000
+exp 10000 50000
+reward 51505 10
+reward 51505 10
+reward 51505 10
+reward 51505 10
+reward 51505 10
+end
+
+start
+id 3
+book 50308
+type boss
+subtype 1093
+levelrange 50
+max 15
+timer 600
+gold 1000 5000
+exp 10000 50000
+reward 51504 10
+reward 51504 10
+reward 51504 10
+reward 51504 10
+reward 51504 10
+end
+
+start
+id 4
+book 50309
+type boss
+subtype 2493
+levelrange 50
+max 5
+timer 600
+gold 1000 5000
+exp 10000 50000
+reward 51504 10
+reward 51504 10
+reward 51504 10
+reward 51504 10
+reward 51504 10
+end
+
+start
+id 5
+book 50309
+type boss
+subtype all
+levelrange 50
+max 5
+timer 600
+gold 1000 5000
+exp 10000 50000
+reward 51504 10
+reward 51504 10
+reward 51504 10
+reward 51504 10
+reward 51504 10
+end
+
+start
+id 6
+book 50309
+type boss
+subtype all
+levelrange 50
+max 25
+timer 600
+gold 1000 5000
+exp 10000 50000
+reward 51504 10
+reward 51504 10
+reward 51504 10
+reward 51504 10
+reward 51504 10
+end
+

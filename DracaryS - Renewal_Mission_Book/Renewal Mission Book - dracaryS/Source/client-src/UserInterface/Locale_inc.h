@@ -1,0 +1,3 @@
+# add
+
+#define RENEWAL_MISSION_BOOKS
