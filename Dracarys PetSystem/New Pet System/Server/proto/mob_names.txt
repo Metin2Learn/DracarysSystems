@@ -1,0 +1,22 @@
+34036	Dragonette
+34037	Dragonette (Hero)
+34039	Baby Huashin
+34041	Mini Monkey
+34042	Mini Monkey (Hero)
+34045	Mini Spider
+34046	Mini Spider (Hero)
+34047	Exedyar Brood
+34048	Exedyar Rare Brood
+34049	Mini Razador
+34050	Mini Razador (Hero)
+34053	Mini Nemere
+34054	Mini Nemere (Hero)
+34073	Mini Azrael
+34074	Mini Azrael (Hero)
+34075	Fat Mini Executor
+34076	Fat Mini Executor (Hero)
+34080	Baby Baashido
+34081	Baby Baashido (Hero)
+34082	Nessie
+34083	Nessie (Hero)
+

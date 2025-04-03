@@ -1,0 +1,38 @@
+0	blue_dragon_young2	blue_dragon_young1
+34036	blue_dragon_young1
+34037	blue_dragon_young2
+34039	skipia_general_young1
+0	monkey_young2	monkey_young1
+34041	monkey_young1
+34042	monkey_young2
+0	spider_redpoison_young2	spider_redpoison_young1
+34045	spider_redpoison_young1
+34046	spider_redpoison_young2
+0	pve_dragon_young_1	pve_dragon_young
+0	pve_dragon_young_2	pve_dragon_young
+0	pve_dragonmaster_boss_1	pve_dragonmaster_boss
+0	pve_dragonmaster_boss_2	pve_dragonmaster_boss
+0	pwahuang1_2	pwahuang1
+0	pwahuang1_3	pwahuang1
+0	pwahuang1_4	pwahuang1
+34047	pve_dragon_young_1
+34048	pve_dragon_young_2
+34049	yamachun_young1
+34050	yamachun_young2
+34053	hanma_young1
+34054	hanma_young2
+34073	pwahuang1_3
+34074	pwahuang1_4
+0	redthief2_officer_young2	redthief2_officer_young1
+0	redthief2_officer_young3	redthief2_officer_young1
+0	redthief2_officer_young4	redthief2_officer_young1
+34075	redthief2_officer_young3
+34076	redthief2_officer_young4
+0	luck_sheep_young1	luck_sheep_young1
+0	luck_sheep_young2	luck_sheep_young1
+34080	luck_sheep_young1
+34081	luck_sheep_young2
+0	defensewave_hydra_pet_1	defensewave_hydra_pet
+0	defensewave_hydra_pet_2	defensewave_hydra_pet
+34082	defensewave_hydra_pet_1
+34083	defensewave_hydra_pet_2

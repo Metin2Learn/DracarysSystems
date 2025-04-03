@@ -28,7 +28,7 @@
 # Search
 
 	signal_timer_enable(30);
-
+# to do find where
 #ifdef ENABLE_PVP_TOURNAMENT
 	if(g_bChannel == 99)
 		quest::CQuestManager::instance().RequestSetEventFlag("pvp_duel_active", 0);

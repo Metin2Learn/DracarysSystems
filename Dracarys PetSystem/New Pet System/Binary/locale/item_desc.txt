@@ -1,0 +1,49 @@
+55001	Protein Snack	Feed your exhausted pet a tasty Protein Snack and it will be completely restored.
+55002	Transport Box	When you place your pet in the Transport Box it becomes tradeable for 30 days.
+55003	Young Pet Book	Using the following items you can promote your pet to the next level (Wild Pet)
+55004	Wild Pet Book	Using the following items you can promote your pet to the next level (Valiant Pet)
+55005	Valiant Pet Book	Using the following items you can promote your pet to the next level (Heroic Pet)
+55006	Hero Pet Book	Using the following items you can promote your pet to the last level.
+55007		
+55008	Pet Name Scroll	Drag the scroll onto your pet to change its name.
+55009	Pet Book Chest	Contains a randomly selected pet skill book.
+55010	Art of Metin Hunter	After learning this skill your pet increases your increase metin attacks.
+55011	Art of Boss Hunter	After learning this skill your pet increases your increase boss attacks.
+55012	Art of Undead Hunter	After learning this skill your pet increases your increase undead attacks.
+55013	Art of God Slaying	After learning this skill your pet increases your increase half-human attacks.
+55014	Art of Supreme Sage	After learning this skill your pet increases your increase cast speed.
+55015	Art of Monster Hunter	After learning this skill your pet increases your increase monster attacks.
+55016	Art of Might	After learning this skill your pet increases your increase STR.
+55017	Art of Knowledge	After learning this skill your pet increases your increase INT.
+55018	Art of Shadow	After learning this skill your pet increases your increase DEX.
+55019	Art of Magic Hunter	After learning this skill your pet increases your increase skill damage.
+55020	Art of Weapon Hunter	After learning this skill your pet increases your increase hit damage attacks.
+55021	Art of Sacred Protection	After learning this skill your pet increases your resistance against critics.
+55022	Art of Sacred Armor	After learning this skill your pet increases your resistance against penetrate attacks.
+55023	Art of God Blessing	After learning this skill your pet increases your resistance against half-human attacks.
+55024	Art of Supreme Warrior	After learning this skill your pet increases your resistance against block attacks.
+55025	Art of Boss Master	After learning this skill your pet increases your resistance against boss attacks.
+55026	Art of Sacred Element	After learning this skill your pet increases your resistance against element attacks.
+55027	Art of Weapon Master	After learning this skill your pet increases your resistance against hit damage attacks.
+55028	Art of Magic Master	After learning this skill your pet increases your resistance against skill damage attacks.
+55029	Art of Master Hunter	After learning this skill your pet increases your get exp, drop gold and drop item knowledge.
+55030	Art of Holy Water	-
+55031	Art of Life	After learning this skill your pet increases your get hp.
+55032	Tasty Treat	Feed this snack to your pet in the pet interface to give it additional item EXP towards its evolution.
+55033	Pet Reverti	Open the pet window and right-click on the token to remove all of your pet's skills.
+55034	Pet Revertus	Open the pet window and drag the token onto the skill you want to remove.
+55035	Tasty Treat+	Feed this snack to your pet in the pet interface to give it 5% of the item EXP towards its evolution.
+55036	Pet Open Slot	You can increase pet slot count with this item.
+55037	Enchant Pet	Used to modify your pet's stats. Press 'P' on your keyboard to bring up the pet interface.
+55101	Elixir of Vitality(S)	You can increase your pet's bonuses with this item.
+55102	Elixir of Vitality(M)	You can increase your pet's bonuses with this item.
+55103	Elixir of Vitality(L)	You can increase your pet's bonuses with this item.
+55104	Elixir of Vitality(XL)	You can increase your pet's bonuses with this item.
+55108	Elixir of Fight(S)	You can increase your pet's bonuses with this item.
+55109	Elixir of Fight(M)	You can increase your pet's bonuses with this item.
+55110	Elixir of Fight(L)	You can increase your pet's bonuses with this item.
+55111	Elixir of Fight(XL)	You can increase your pet's bonuses with this item.
+55115	Elixir of Power(S)	You can increase your pet's bonuses with this item.
+55116	Elixir of Power(M)	You can increase your pet's bonuses with this item.
+55117	Elixir of Power(L)	You can increase your pet's bonuses with this item.
+55118	Elixir of Power(XL)	You can increase your pet's bonuses with this item.

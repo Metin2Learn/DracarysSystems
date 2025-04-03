@@ -1,0 +1,86 @@
++WIKI_NEW_PET	Pet System
+WIKI_NEW_PET_TEXT_1	Pet Egg
+WIKI_NEW_PET_TEXT_2	Pet Evolve
+WIKI_NEW_PET_TEXT_3	Pet Status Values
+WIKI_NEW_PET_TEXT_4	Pet Skills
+WIKI_NEW_PET_TEXT_5	-
+WIKI_NEW_PET_TEXT_6	The maximum pet level is 120.
+WIKI_NEW_PET_TEXT_7	The pet gets experience by killing monsters.
+WIKI_NEW_PET_TEXT_8	You can level your pet with a Pet Experience Bottle.
+WIKI_NEW_PET_TEXT_9	The pet name can be changed with a Pet Name Scroll.
+WIKI_NEW_PET_TEXT_10	You have to feed your pet with a Protein Snack from the General Store.
+WIKI_NEW_PET_TEXT_11	You can choose a Pet Egg after the Lv. 30 Biologist Reward. There is no difference between the different Pets.
+WIKI_NEW_PET_TEXT_12	You can let your pet hatch by right-clicking on the Pet Egg
+WIKI_NEW_PET_TEXT_13	There are 4 pet stages. Young, Wild, Brave and Heroic.
+WIKI_NEW_PET_TEXT_14	By reaching pet stages you can level your pet higher.
+WIKI_NEW_PET_TEXT_15	Pet evolution unlocks skill slots.
+WIKI_NEW_PET_TEXT_16	3.1 The Wild Pet Evolution
+WIKI_NEW_PET_TEXT_17	Once the pet reaches level 40 you mush evolve it to the Wild Level.
+WIKI_NEW_PET_TEXT_18	Even so you need 25.000.000 yang.
+WIKI_NEW_PET_TEXT_19	3.2 The Brave Pet Evolution
+WIKI_NEW_PET_TEXT_20	Once the pet reaches level 75 you mush evolve it to the Brave Level.
+WIKI_NEW_PET_TEXT_21	Even so you need 50.000.000 yang.
+WIKI_NEW_PET_TEXT_22	3.3 The Heroic Pet Evolution
+WIKI_NEW_PET_TEXT_23	Once the pet reaches level 100 you mush evolve it to the Heroic Level.
+WIKI_NEW_PET_TEXT_24	Even so you need 100.000.000 yang.
+WIKI_NEW_PET_TEXT_25	Each pet has 3 status values. Max HP, Strong against Monsters and Critical Damage(PvM)
+WIKI_NEW_PET_TEXT_26	Pet Status values have levels. The maximum level is 20.
+WIKI_NEW_PET_TEXT_27	The amount of the bonus depeneds, on the level of the status.
+WIKI_NEW_PET_TEXT_28	You have to improve the levels with Elixirs.
+WIKI_NEW_PET_TEXT_29	The Level Ups:
+WIKI_NEW_PET_TEXT_30	For the Strong against Monster bonus, Exilir of Challenger is required.(max 20%)
+WIKI_NEW_PET_TEXT_31	For the Critical Damage(PvM) bonus, Elixir of Strength is required (max 10%)
+WIKI_NEW_PET_TEXT_32	For the Max. HP Bonus, Elixir of Vitality is required.(max 4000 HP)
+WIKI_NEW_PET_TEXT_33	The Elixir(S) is needed 5 times to improve one level.
+WIKI_NEW_PET_TEXT_34	The Elixir(M) is needed 5 times to improve one level.
+WIKI_NEW_PET_TEXT_35	The Elixir(L) is needed 5 times to improve one level.
+WIKI_NEW_PET_TEXT_36	The Elixir(XL) is needed 5 times to improve one level.
+WIKI_NEW_PET_TEXT_37	Pet Skill Books can be obtained from a Pet Book Chest.
+WIKI_NEW_PET_TEXT_38	A Pet can learn a maximum of 15 skills.
+WIKI_NEW_PET_TEXT_39	Each level is increased with the respective Pet Skill Book (Maks 20)
+WIKI_NEW_PET_TEXT_40	With Pet Reverti, you can forget all your skills.
+WIKI_NEW_PET_TEXT_41	With Pet Revertus, you can forget a selected skill.
+WIKI_NEW_PET_TEXT_42	The following Skills are available:
+WIKI_NEW_PET_TEXT_43	Red color book is power, blue color book is defence skills.
+PET_ADD_SLOT_QUESTION	Do you want to unlock this slot?
+PET_REMOVE_SLOT_QUESTION	Do you want to delete (%s) skill?
+PET_SKIL_1	Art of Metin Hunter
+PET_SKIL_2	Art of Boss Hunter
+PET_SKIL_3	Art of Undead Hunter
+PET_SKIL_4	Art of God Slaying
+PET_SKIL_5	Art of Supreme Sage
+PET_SKIL_6	Art of Monster Hunter
+PET_SKIL_7	Art of Might
+PET_SKIL_8	Art of Knowledge
+PET_SKIL_9	Art of Shadow
+PET_SKIL_10	Art of Magic Hunter
+PET_SKIL_11	Art of Weapon Hunter
+PET_SKIL_12	Art of Sacred Protection
+PET_SKIL_13	Art of Sacred Armor
+PET_SKIL_14	Art of God Blessing
+PET_SKIL_15	Art of Supreme Warrior
+PET_SKIL_16	Art of Boss Master
+PET_SKIL_17	Art of Sacred Element
+PET_SKIL_18	Art of Weapon Master
+PET_SKIL_19	Art of Magic Master
+PET_SKIL_20	Art of Master Hunter
+PET_SKIL_21	Art of Holy Water
+PET_SKIL_22	Art of Life
+PET_GUI_YOUNG	Young
+PET_GUI_WILD	Wild
+PET_GUI_BRAVE	Valiant
+PET_GUI_HERO	Hero
+PET_GUI_DURATION	Time
+PET_GUI_BONUSES	Bonusses
+PET_GUI_PETSKILL	Skills
+PET_GUI_EVOLVE_BTN	Geli�tir
+PET_GUI_AGE	Evolve
+PET_GUI_EXPERIENCE	Experience
+PET_GUI_TITLE	Pet Static Window
+NAME_PET_INPUT_TEXT	Hatch Egg
+PET_PROTEIN_QUESTION_TEXT	Do you want add life energy to pet
+PET_REMOVE_QUESTION_TEXT	Do you want to forget all your pet skills?
+PET_EXP_QUESTION_TEXT	Do you want to load exp on pet?
+NAME_INPUT_TEXT	Change Name
+INPUT_WINDOW_TEXT	Please try another name.
+NAME_INPUT_PRICE	Price: 100.000 Yang
